@@ -13,12 +13,12 @@ int main()
     
     for(int i=0; i<n; i++) {
         if(str[i] == str[i+1]) {
-            continue;
+            continue;               
         }
         else {
-            char c = str[i];
+            char c = str[i];     // You could just add a counter here that keeps track of the number of unmatched adjacent elements and print the result
             str2[j] = c;
-            str2[j+1]= '\0';
+            str2[j+1]= '\0';     // I did this just to find the resultant string with to matching adjacent elements. The problem DOES NOT require this
             j++ ;
             
         }
